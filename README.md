@@ -24,12 +24,12 @@ Copy the dll files in the instantclient directory to the python directory (Thư 
 
 import cx_Oracle
 
-HostName='10.220.81.98'
-PortNumber='1521'
+HostName='10.220.81.xx'
+PortNumber='xxxx'
 service_name='vnap'
 
-user=r'CQ'
-password='vnapuser'
+user=r'xxxx'
+password='xxxxx'
 dsn_tns = cx_Oracle.makedsn(HostName, PortNumber, service_name)
  # if needed, place an 'r' before any parameter in order to address special characters such as '\'.
 conn = cx_Oracle.connect(user=user, password=password, dsn=dsn_tns) 
